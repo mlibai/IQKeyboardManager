@@ -129,6 +129,15 @@ open class IQTextView : UITextView {
             super.delegate = newValue
         }
     }
+    
+    open var placeholderColor: UIColor? {
+        get {
+            return placeholderLabel?.textColor
+        }
+        set {
+            placeholderLabel?.textColor = newValue
+        }
+    }
 }
 
 
